@@ -25,12 +25,8 @@ class _LoginPageState extends State<LoginPage> {
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
   final _passwordRController = TextEditingController();
-
-  // Border color
   final Color _borderColor = Colors.blue;
-  // Border width
   final double _borderWidth = 1.0;
-  // Border radius
   final double _borderRadius = 10.0;
 
   @override
@@ -79,7 +75,6 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(
                   filled: true,
                   labelText: 'Username',
-                  // Applying border properties
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(_borderRadius),
                     borderSide: BorderSide(
@@ -96,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              const SizedBox(height: 12.0), // Adjusted spacing
+              const SizedBox(height: 12.0),
               // [Password]
               Text(
                 'Masukkan Password',
@@ -127,20 +122,18 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 obscureText: true,
               ),
-              const SizedBox(height: 12.0), // Adjusted spacing
+              const SizedBox(height: 12.0),
               // [Password Repeat]
               Text(
                 'Masukkan Kembali Password',
                 style: TextStyle(fontSize: 16.0),
               ),
               const SizedBox(height: 8.0),
-              // TextField for Password Repeat
               TextField(
                 controller: _passwordRController,
                 decoration: InputDecoration(
                   filled: true,
                   labelText: 'Password',
-                  // Applying border properties
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(_borderRadius),
                     borderSide: BorderSide(
@@ -179,8 +172,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 12.0), // Adjusted spacing
-              // Sign in Button and "Sudah punya akun?" text
+              const SizedBox(height: 12.0),
               Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
